@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #8E2DE2, #4A00E0, lightblue);
+  }
+
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+  .tampilan {
+    color: black;
+    float: left;
+  }
+  
+  .tampilan a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+
+  
+  
+  .tampilan a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    letter-spacing: .4px;
+  }
+  
+  a{
+    font-size:  24px;
+    color:var(--color-black);
+    text-decoration-color: var(--clor-white);
+
+  }
+
+  a:hover{
+    color: var(--color-dark-variant);
+    text-decoration-color:var(--color-dark-variant) !important;
+    text-underline-offset: 1rem;
+    text-decoration: underline  ;
+  }
+
+
+nav{
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: white ;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100%;
+  padding-bottom: 80px; 
+
+}
+
+.nav-links li a:hover {
+  background-color: #000; 
+  color: #fff; 
+}
+
+.logo {
+  font-size: 32px;
+  color: var(--color-black) !important;
+  text-decoration: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+  h1 {
+    font-size: 48px;
+    color: var(--color-black);
+    
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: var(--color-dark-variant);
+  }
+
+  h3{
+    font-size: 26px;
+    color: var(--color-black);
+  }
+  h4{
+    font-size: 19px;
+    color: var(--color-black);
+  }
+  h5{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+p{
+  font-size: 16px;
+  line-height: 140%;
+}
+.heading-p{
+  padding-top: 6rem;
+}
+  .container {
+    
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-container,
+  .education-container,
+  .about-me-container,
+  .certificates-container, 
+  .social-media-container
+   {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin: 100px;
+    max-width: 1000px;
+
+     border-color: white
+  }
+  
+  
+  .profileImage {
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  
+
+
+  .container > * {
+    flex: 1;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .social-media-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .instagram-link,
+  .tiktok-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  
+  .instagram-logo {
+    width: 40px;
+    height: 25px;
+    margin-bottom: 20px;
+
+  }
+  
+  .tiktok-logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
+  }
+  
+  
+  
+  .info-container {
+    flex-direction: column;
+  }
+  .certificates-container ul li img {
+    width: 200px; 
+    height: auto;
+  }
+.ig_text{
+  margin-bottom: 25px;
+}
+.tiktok_text{
+  margin-left: 8px;
+}
+.square {
+  border: 5px solid #bdc3c7;
+  width: 210px;
+  height: 150px; 
+  padding: -1em;
+  margin: 3em auto;
+  transition: all 1s;
+}
+.square2 {
+  border: 5px solid #bdc3c7;
+  width: 210px;
+  height: 120px; 
+  padding: -1em;
+  margin: 3em auto;
+  transition: all 1s;
+}
+.square:hover {
+  border-color: cyan;
+  box-shadow: 0 5px 7px #000;
+  margin-top: 2em;
+}
+
+
+.certificates-container li:hover {
+ 
+  border-color: black; 
+  background-color: #fff; 
+  position: relative;
+  
+}

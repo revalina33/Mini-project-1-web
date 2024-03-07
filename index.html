@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desain.css">
+  <title >Portofolio Web</title>
+  <style>
+    #typed-text {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  
+    <div class="container nav-container">
+    <a href="#" class="logo">RevaU</a>
+    <nav class="tampilan">
+      <ul class="nav-links">
+        <li><a href="#summary">Summary</a></li>
+      <li><a href="#education" class="nav-link">Educations</a></li>
+      <li> <a href="#about-me" class="nav-link">About Me</a></li>
+      <li><a href="#certificates" class="nav-link">Certificate</a></a></li>
+      <li> <a href="#Sosial_Media"class="nav-link" >Sosial Media</a></li>
+      
+    </ul>
+  </div>
+    </nav>
+  </header>
+     
+
+  <div class="container">
+    <h1 id="typed-text"></h1>
+
+    <div class="profile-container">
+      <h3 style="margin-top: 30px;">Sanny Revalina Abigail</h3>
+      <div class="profile">
+        <img class="rounded-circle profileImage" src="foto_diri.jpeg" alt="" width="150px">
+        <h3 id="summary" style="color: rgb(64, 32, 96);">Summary</h3>
+
+        <br>
+        
+          <p><strong>Usia</strong> 19</p>
+          <p><strong>Telp</strong> 6281257591680</p>
+          <p><strong>Email</strong> sannyabigail1@gmail.com</p>
+          <p><strong>Tanggal lahir</strong> 5 Juni 2004</p>
+        </div>
+        </div>
+        
+
+    <div id="education" class="info-container">
+      <div class="education-container">
+        <h2 id="education">Education</h2>
+        <br>
+        <p>SD Bethlehem</p>
+        <br>
+        <p>SMP Negeri 2 Bontang</p>
+        <br>
+        <p>SMA Negeri 2 Bontang</p>
+        <br>
+
+        <p>Universitas Mulawarman tahun 2022-sekarang</p>
+        <p>jurusan Sistem Informasi</p>
+      </div>
+      <div class="about-me-container">
+        <h2 id="about-me">About Me</h2>
+        <p> Nama Saya adalah Sanny Revalina Abigail, saya merupakan mahasiswi Universitas Mulawarman angkatan 22. Saat ini saya sedang menempuh pendidikan di jurusan Sistem Informasi dan bersemangat untuk menyelesaikan studi saya. Sebagai anak pertama dari tiga bersaudara, saya memiliki rasa tanggung jawab yang tinggi. Di waktu luang, saya senang membaca buku untuk menambah pengetahuan dan memperluas wawasan. Saya percaya bahwa membaca dapat membuka pintu ke berbagai dunia dan membantu saya untuk menjadi pribadi yang lebih baik.</p>
+      </div>
+        <div class="certificates-container">
+          <h2>Sertifikat</h2>
+       
+          <div id="certificates" class="hidden">
+            <ul>
+              <li class="square">
+                <img src="sertifikat_renang.jpeg" alt="Sertifikat Renang" title="SERTIFIKAT RENANG">
+              </li>
+              
+              <li class="square2">
+                <img src="sertifikat_mandarin.jpg" alt="Sertifikat Bahasa Mandarin" title="Sertifikat Bahasa Mandarin">
+              </li>
+              <li class="square2">
+                <img src="sertifikat_jepang.jpg" alt="Sertifikat Bahasa Jepang" title="Sertifikat Bahasa Jepang">
+              </li>
+            </ul>
+            
+        </div>
+      </div>
+    </div>
+ 
+    <div class="social-media-container">
+      <div class="social-media-icons">
+        <h2 id="Sosial_Media">Sosial Media</h2>
+        <br>
+        <a href="https://www.instagram.com/sannyabigail33?igsh=MTQzZzgxOTNmcHc1NA==" class="instagram-link" target="_blank">
+          <img src="https://4.bp.blogspot.com/-NS_uLd2UdEI/WrSyI1AWC_I/AAAAAAAAKfI/McgqxTCkSg8eMz7vjmw8I-zrIupIPDWdwCLcBGAs/s1600/Instagram.png" alt="Instagram Logo" class="instagram-logo"><span><p class="ig_text">sannyabigail33</p></span>
+        </a>
+        <a href="https://www.tiktok.com/@sanny_revalina?_t=8kHtGG33iyo&_r=1" class="tiktok-link" target="_blank">
+          <img src="https://logodownload.org/wp-content/uploads/2019/08/tiktok-logo-icon.png" alt="TikTok Logo" class="tiktok-logo"><span><p class="tiktok_text">sanny_revalina</p></span>
+        </a>
+      </div>
+    </div>
+
+  <script>
+    const textElement = document.getElementById('typed-text');
+    const text = "Portofolio Sanny Revalina";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        textElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50); 
+      }
+    }
+
+
+    typeWriter();
+
+    
+  </script>
+</body>
+
+</html>
