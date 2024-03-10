@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #8E2DE2, #4A00E0, lightblue);
+    background: linear-gradient(to right , #8E2DE2, #4A00E0, lightblue);
   }
 
 .heading{
@@ -12,6 +12,7 @@ body {
   .tampilan {
     color: black;
     float: left;
+    
   }
   
   .tampilan a {
@@ -68,7 +69,7 @@ nav{
   background: white ;
 }
 
-.nav-container{
+.nav-kotak{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,8 +97,10 @@ nav{
 
 .nav-links{
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  margin-left: 150px;
+  gap: 1rem;
+  
+  
 }
   h1 {
     font-size: 48px;
@@ -130,19 +133,20 @@ p{
 .heading-p{
   padding-top: 6rem;
 }
-  .container {
+  .kotak {
     
     display: grid;
     place-items: center;
     flex-direction: column;
     align-items: center;
+    
   }
   
-  .profile-container,
-  .education-container,
-  .about-me-container,
-  .certificates-container, 
-  .social-media-container
+  .profile-kotak,
+  .education-kotak,
+  .about-me-kotak,
+  .certificates-kotak, 
+  .social-media-kotak
    {
     background-color: lightgray;
     padding: 20px;
@@ -152,11 +156,9 @@ p{
     text-align: center;
     margin: 100px;
     max-width: 1000px;
-
-     border-color: white
+    border-color: white
   }
-  
-  
+
   .profileImage {
     border-radius: 50%;
     width: 150px;
@@ -164,21 +166,37 @@ p{
     margin-bottom: 30px;
   }
   
-  
-
-
-  .container > * {
+ 
+  .education-kotak,
+  .about-me-kotak,
+  .certificates-kotak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  .profile-kotak,
+  .about-me-kotak,
+  .education-kotak,
+  .certificates-kotak,
+  .social-media-kotak {
+    margin-bottom: 400px; 
+  }
+  .kotak > * {
     flex: 1;
   }
   
-  .info-container {
+  .info-kotak {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
   }
   
-  .social-media-container {
+  .social-media-kotak {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -208,10 +226,10 @@ p{
   
   
   
-  .info-container {
+  .info-kotak {
     flex-direction: column;
   }
-  .certificates-container ul li img {
+  .certificates-kotak ul li img {
     width: 200px; 
     height: auto;
   }
@@ -244,10 +262,30 @@ p{
 }
 
 
-.certificates-container li:hover {
+.certificates-kotak li:hover {
  
   border-color: black; 
   background-color: #fff; 
   position: relative;
   
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+     height: auto; 
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+     z-index: 1000;
+   
+  }
+
+  .nav-links li {
+    margin: 10px;
+    display: block;
+  }
 }
